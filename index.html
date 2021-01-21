@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Clock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div id="clock">
+            <div class="bgColor">
+                <button id="changeClockBg">Change Background Color</button>
+                <button id="defClockBg">Default Color</button>    
+            </div>
+            <p id="showClock"></p>
+            <div class="btnshow">
+                <button id="stpbtn" onclick="clearInterval(Clock)">Stop Clock</button>
+                <button  id="rstbtn" onclick="setInterval(clockTime,1000)">Resume Clock</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="jscode.js"></script>
+    
+</body>
+</html>

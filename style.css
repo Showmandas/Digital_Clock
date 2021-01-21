@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #000;
+}
+#clock{
+    width: 60vw;
+    height: 60vh;
+    border: 2px solid #3e3e3e;
+    background: rgba(30,30,30,0.5);
+     position: relative;
+     box-shadow: 0 10px 30px -6px #000;
+}
+#showClock{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    position: absolute;
+    -webkit-text-fill-color:rgba(30,140,20,0.8);
+    -webkit-text-stroke-width:3px;
+    top: 25%;
+    left: 25%;
+    transform: translateX(-25% -25%);
+    color: #000;
+    font-family: 'Luckiest Guy', cursive;
+}
+.btnshow{
+    width: calc(60vw - 30vw);
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center;/ */
+    margin-bottom: 20px;
+    position: absolute;
+    top:60%;
+    left: 25%;
+    transform: translateX(-60%,-7%);
+}
+#stpbtn{
+    
+    padding: 20px 30px;
+    font-size: 15pt;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Hanalei Fill', cursive;
+}
+#rstbtn{
+    
+    padding: 20px 20px;
+    font-size: 15pt;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Hanalei Fill', cursive;
+}
+#stpbtn:hover{
+      background: rgba(0,0,0,0.6);
+      color: #ddd;
+      transition: all .4s ease-in-out;
+}
+#rstbtn:hover{
+      background: rgba(0,0,0,0.6);
+      color: #ddd;
+      transition: all .4s ease-in-out;
+}
+#changeClockBg{
+    padding: 10px 10px;
+    font-size: 10pt;
+    /* border-radius: 10/px; */
+    outline: none;
+    border: none;
+    font-family: 'Hanalei Fill', cursive;
+}
+#changeClockBg:hover{
+    background: rgba(0,0,0,0.6);
+      color: #ddd;
+      transition: all .4s ease-in-out;
+}
+#defClockBg{
+    padding: 10px 10px;
+    font-size: 10pt;
+    /* border-radius: 10/px; */
+    outline: none;
+    border: none;
+    font-family: 'Hanalei Fill', cursive;
+}
+#defClockBg:hover{
+    background: rgba(0,0,0,0.6);
+      color: #ddd;
+      transition: all .4s ease-in-out;
+}
+.bgColor{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    #clock{
+        width: 100vw;
+        height: 100vh;
+        /* border: 2px solid #3e3e3e;
+        background: rgba(30,30,30,0.5);
+         position: relative;
+         box-shadow: 0 10px 30px -6px #000; */
+    }   
+    .btnshow{
+        width: 100vw;
+         display: block; 
+         top:60%;
+        left: 10%;
+        transform: translateX(-60%,-10%); 
+    
+    }
+    #stpbtn{
+        width: 80vw;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+    #rstbtn{
+        width: 80vw;
+        padding: 15px 20px;
+    }
+    #showClock{
+        text-align: center;
+        font-size: 4rem;
+        top: 30%;
+        left: 9%;
+        transform: translateX(-30% -9%);
+      
+    }
+}
+@media(min-width:769px) and (max-width:1024px){
+    #clock{
+        width: 100vw;
+        height: 100vh;
+        /* border: 2px solid #3e3e3e;
+        background: rgba(30,30,30,0.5);
+         position: relative;
+         box-shadow: 0 10px 30px -6px #000; */
+    }   
+    .btnshow{
+        width: 100vw;
+         display: block; 
+         top:60%;
+        left: 10%;
+        transform: translateX(-60%,-10%); 
+    
+    }
+    #stpbtn{
+        width: 80vw;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+    #rstbtn{
+        width: 80vw;
+        padding: 15px 20px;
+    }
+    #showClock{
+        text-align: center;
+        font-size: 10rem;
+        top: 30%;
+        left: 15%;
+        transform: translateX(-30% -10%);
+      
+    }
+}
